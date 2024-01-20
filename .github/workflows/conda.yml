@@ -25,11 +25,11 @@ jobs:
         source /usr/share/miniconda/bin/activate
         conda activate tms
         pip install -r requirements.txt
+    - name: Run pytest
+      run: |
+        source /usr/share/miniconda/bin/activate
+        conda activate tms
         pytest
-    # - name: Run tests1
-    #   run: python --version
-    # - name: Run tests2
-    #   run: gcc --version
     # - name: Run tests with pytest
     #   uses: pavelzw/pytest-action@v2
     #   with:
