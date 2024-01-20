@@ -29,3 +29,5 @@ jobs:
       run: python --version
     - name: Run tests2
       run: gcc --version
+    - name: Run code test
+      run: pytest
